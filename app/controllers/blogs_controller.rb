@@ -27,6 +27,9 @@ class BlogsController < ApplicationController
     redirect_to blog_path(blog.id)
   end
   
+  def destroy
+    
+  
   private
   def blog_params
     params.require(:blog).permit(:title, :category, :body)
